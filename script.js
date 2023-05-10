@@ -18,7 +18,17 @@ const storyTexts = [
     The cat hesitated, then cautiously approached. As it rubbed against her hand, Ruby whispered a promise into the night air. "One day, we'll both leave this place, find a home where we're accepted and loved."
     `,
 
-    `Placeholder for now 4`,
+    `In the cold light of dawn, the sun breached the horizon, throwing its harsh, unforgiving heat on the tableau before it. A family of six – a man and woman, their countenances etched with the weary lines of an old, overused joke, stood beside their brood of three boys and a girl, the youngest. Each one was suited up in their Sunday best, all starched collars and polished shoes, a stark contrast to the dust-laden country road beneath them.
+
+    Off in the distance, two houses stood – white and identical. Twins birthed from the same architectural plan. One was pristine, a beacon of the American Dream, its white picket fence gleaming under the morning sun. The other, though, was caught in the throes of a wild, uncontrollable fire, its screams silenced by the crackling of its devouring.
+    
+    The family watched, their expressions a mix of dread and acceptance. There was no rush to douse the flames, no cries of despair. Just a quiet acknowledgment of the absurdity before them.
+    
+    The children stared, wide-eyed and silent, their innocence flickering under the harsh reality. Perhaps they were learning, that sometimes, homes caught fire under the indifferent gaze of the morning sun, and all one could do was stand by the side of the road in their neat clothes and watch.
+    
+    The father, his face chiseled with lines of age and wisdom, held his wife close, her eyes reflecting the dancing flames, a silent lament for the life being consumed by the fire. It was a sight that would have moved the most hardened of hearts, but on this lonely country road, their audience was the indifferent expanse of the world.
+    
+    This was no grand saga of heroes and villains. There were no metaphors to be unraveled, no allegories to be interpreted. It was a simple, stark truth – as raw and real as the fire that raged on.`,
     `In the dim, flickering light of the decrepit diner, a motley group of clowns gathered around a worn-out table. The peeling vinyl seats creaked beneath their weight, while the chipped Formica tabletop threatened to give way at any moment. The clowns, a bizarre assembly of adults, teenagers, and children, wore a variety of tattered costumes, their faces painted in garish colors, and their eyes filled with a mix of sorrow and malice.
 
     Outside, the twilight sky seemed to press down on the diner, its cracked neon sign buzzing and sputtering in the encroaching darkness. The air inside was thick with the smell of grease and stale coffee, the scent of lingering desperation and lost dreams. Yet, these strange and frightening clowns had found a haven of sorts within the diner's crumbling walls.
