@@ -76,12 +76,24 @@ In the quietude, one could almost hear the soft sigh of the universe. A sigh tha
 
 There was no grand revelation, no profound wisdom to be gleaned. Just a man, a cake, and a present - an unlikely trinity, bound together by the silent chords of irony and sadness. A slice of life served with a side of existential ennui.`,
 
+`On a day when autumn had painted its melancholy across the suburban landscape, two figures emerged from the fog, as if stepping out of a dream. Their faces concealed behind masks - one a bear or perhaps a mouse, the other a cat - they sat before a nondescript house, holding hands.
+
+Who they were behind those masks, no one could tell. A couple lost in their little world? A father sharing a moment with his daughter? The masks kept their secrets well, adding to the enigma of the scene.
+
+The man, if indeed it was a man, was dressed in a green jacket, a white shirt, and a red bow - an unlikely blend of formality and the bizarre. The girl, clad in a pink dress, was a splash of color against the gray backdrop of the day. They sat there, a pair of surreal characters in an otherwise ordinary suburban tableau.
+
+This was no ordinary day, though. The fog, the masks, the silent house in the background - they all conspired to create a scene that belonged more in the pages of a storybook than in the mundane reality of a suburban neighborhood. And yet, here they were, their hands entwined, silent spectators to the unfurling drama of life.
+
+Their story was a silent song, sung in the key of irony and melancholy. Was it a dance of love, or a shared moment of solitude? Were they hiding from the world, or revealing their true selves behind those masks?
+
+Life had placed them there, in front of that house, on that foggy autumn day. And there they sat, holding hands, their silence more telling than any words could ever be.`,
+
 ];
 
 
 
 
-  const imagePaths = ["image1.png", "image2.png", "image3.jpg", "image4.jpg", "image5.jpg", "image6.png", "image7.png","image8.png", "image9.png"];
+  const imagePaths = ["image1.png", "image2.png", "image3.jpg", "image4.jpg", "image5.jpg", "image6.png", "image7.png","image8.png", "image9.png", "image10.png"];
 
   const textContainer = document.getElementById("text-container");
   const overlayImage = document.getElementById("overlay-image");
