@@ -1,5 +1,7 @@
 const storyTexts = [
-    `The girl, no older than nineteen, perched on the edge of the bed, her legs drawn up and her arms wrapped tightly around her knees. The sunlight filtered through the grimy window, casting a warm glow on her pale skin, which seemed almost translucent against the vibrant orange wallpaper. The garish pattern behind her seemed to writhe and twist, as if it were a living thing eager to engulf her in its monstrous embrace.`,
+    `The girl, no older than nineteen, perched on the edge of the bed, her legs drawn up and her arms wrapped tightly around her knees. The sunlight filtered through the grimy window, casting a warm glow on her pale skin, which seemed almost translucent against the vibrant orange wallpaper. The garish pattern behind her seemed to writhe and twist, as if it were a living thing eager to engulf her in its monstrous embrace. She was not looking at the camera, but rather seemed lost in the labyrinth of her own thoughts, a place where reality and fantasy were indistinguishable. Her eyes, large and doe-like, held a distant, vacant quality, as if they could see beyond the confines of the room and into another world. Her hair, a tangle of chestnut curls, framed her face like a halo, further enhancing the ethereal quality of her visage.
+
+    In the twilight of her dreams, the girl would find solace, a place where the past could not haunt her and the future held no terror. And though the asylum sought to confine her, to strip her of her identity and her hope, she would endure. For within the depths of her soul, a flame burned brightly, a spark that could not be quenched by the cold, unyielding grip of the institution that sought to claim her.`,
     
     `In the dimly lit room, the wallpaper peeling at the edges like the rind of a long-forgotten fruit, Henry found himself seated on the edge of the sagging bed. The worn springs creaked beneath his weight, mirroring the heaviness that had settled in his chest. His gaze was fixed on the floor, the dust motes floating in the shafts of afternoon light that filtered through the grimy window. He was a man on the precipice of understanding, teetering between the realms of past and present, like a ghost caught between worlds.
     Beside him, Mei lingered in her own purgatory. Her raven hair, a cascade of midnight silk, framed her face as she stared into her cupped hands. They were small, delicate hands that had once traced the contours of Henry's face in tender moments now lost to the ravages of time. In the silence that stretched between them, she could feel the heat of his body, an unbearable warmth that threatened to singe her very soul. The red flush that colored her cheeks spoke of her shame, but the downcast eyes held a glimmer of defiance.    
@@ -40,10 +42,46 @@ const storyTexts = [
 
 A deity, if one cared to look, might have smirked at the woman's plight, this incongruous juxtaposition of mirth and misery. She was like a reluctant Eve, bound to a carousel of damnation. The carousel groaned, its gears grinding against the backdrop of her quiet contemplation. One could almost hear the echoes of a thousand philosophers, whispering of the human condition, our cursed dance with life and all its absurdities.
 
-In this scene, a priest might have perceived redemption, but the woman's face betrayed no such hope. In this spinning purgatory, she lingered between the poles of grace and despair, her expression a frozen testament to the bitter joke of existence. And so, the carousel turned, indifferent to the burdens it carried, as the woman stood, rooted in her private darkness, a lone figure bearing witness to the cosmic irony of the human condition.`
-  ];
-    
-  const imagePaths = ["image1.png", "image2.png", "image3.jpg", "image4.jpg", "image5.jpg", "image6.png"];
+In this scene, a priest might have perceived redemption, but the woman's face betrayed no such hope. In this spinning purgatory, she lingered between the poles of grace and despair, her expression a frozen testament to the bitter joke of existence. And so, the carousel turned, indifferent to the burdens it carried, as the woman stood, rooted in her private darkness, a lone figure bearing witness to the cosmic irony of the human condition.`,
+
+`Under the restaurant's soft light, a man sat, his face a palette of white, a caricature of joy. Clown makeup traced his features, a deceiving mask of merriment. His hair, styled in a defiant pompadour, contrasted with the large red bow tie and the black and white dotted jacket he wore.
+
+In his hands, an acoustic guitar hummed, its notes weaving through the clatter of cutlery and hushed conversations. It sang tales of love and loss, a symphony of life echoed in the confines of a restaurant.
+
+Before him, untouched, sat a cup of coffee, its steam curling upwards, and a piece of cake, its icing as flawless as his painted smile.
+
+This scene, drenched in irony and absurdity, was a silent song in itself. A clown, the harbinger of laughter, sat immersed in a melody, as melancholic as it was beautiful. Each strum, a veiled secret, each note, a teardrop hidden behind the clown's eyes.`,
+
+`In a time and place that bore no name but the ever-humming human tide, a girl, a mere sprout in her early twenties, drifted through the masses. She, with her large eyes the color of twilight and spectacles of a magnified diameter, wore a red coat that announced itself like a poppy in a field of wheat. Underneath this startling spectacle was a simpler brown shirt, as humble as the earth it resembled.
+
+She wandered, adrift in the sea of bodies, her figure no more noticeable than a single stroke of paint on a canvas of chaos. That was her way, never quite becoming the focus, never quite fading into the obscurity. A paradoxical existence, she bore with a grace that echoed the fragile balance of a butterfly on the tip of a thistle.
+
+There was something about her, an oddity, an uncanny aura that drew the onlookers in, yet kept them at an arm's length. Her presence was a riddle, a half-whispered joke to which only she knew the punchline. She did not look at the camera; instead, her gaze pierced the crowd, dissected the clamoring throng of humanity with an ineffable curiosity.
+
+She had the look of a girl who had seen the world for what it was - a parade of grimaces and grins, pretensions and promises. Yet, she was not cynical, her heart not hardened by the grotesque spectacle of life. She bore the weight of wisdom and innocence, a peculiar blend of knowing yet not being burdened by it.
+
+Her spectacles, large and round as they were, hinted at her observant nature. Through them, the world was a story, a series of narratives that unfolded before her eyes. The crowd, a motley of faces, each with a tale to tell, each a chapter in the grand book of existence.
+`,
+
+`The smell of freshly baked birthday cake permeated the room. An array of lit candles flickered atop its pink frosting, their warm glow throwing dancing shadows against the impassive face of a man in a satan costume.
+
+He sat there, an oddity in an otherwise mundane scene, donning plastic horns and a black leather vest. His face was a canvas of eerie makeup, giving him a ghastly appearance. And yet, beneath this facade, a certain sadness lingered. His eyes, windows to his soul, bore the weight of a thousand untold stories.
+
+On the table, a present sat, haphazardly wrapped as if it were an afterthought, its paper crinkling under the strain of whatever secret it held within. It sat there, as out of place as the man himself, adding to the absurdity of the scene.
+
+No cheer, no laughter, no celebratory clinking of glasses. Just a man, dressed as the devil himself, sitting in the disquieting silence, the chorus of 'Happy Birthday' replaced with the soft whisper of the burning candles.
+
+
+In the quietude, one could almost hear the soft sigh of the universe. A sigh that filled the room, mingling with the smell of the birthday cake, hanging heavy in the air like a reminder of the absurdity of it all.
+
+There was no grand revelation, no profound wisdom to be gleaned. Just a man, a cake, and a present - an unlikely trinity, bound together by the silent chords of irony and sadness. A slice of life served with a side of existential ennui.`,
+
+];
+
+
+
+
+  const imagePaths = ["image1.png", "image2.png", "image3.jpg", "image4.jpg", "image5.jpg", "image6.png", "image7.png","image8.png", "image9.png"];
 
   const textContainer = document.getElementById("text-container");
   const overlayImage = document.getElementById("overlay-image");
