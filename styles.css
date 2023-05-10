@@ -1,5 +1,5 @@
 body {
-    font-family: 'Elegant Typewriter', monospace;
+    font-family: 'Elegant Typewriter', Courier, monospace;
     background-color: #ffffff;
     background-image: url('background1d.png'); /* Replace this with the path to your image */
     background-size: cover; /* Scale the image to cover the entire background */
@@ -58,3 +58,12 @@ nav {
         border-color: transparent;
     }
 }
+
+@font-face {
+    font-family: 'Elegant Typewriter';
+    src: url('Fonts/ELEGANT TYPEWRITER Bold.ttf') format('truetype'),
+         url('Fonts/ELEGANT TYPEWRITER Light.ttf') format('truetype'),
+         url('Fonts/ELEGANT TYPEWRITER Regular.ttf') format('truetype');
+}
+
+  
