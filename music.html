@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Elegant+Typewriter&display=swap');
+        body {
+            font-family: 'Elegant Typewriter', monospace;
+            background-image: url('musicbg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1em 0;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            margin: 0 1em; /* Reduced for smaller screens */
+        }
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1.2em;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #cccccc;
+        }
+        .books-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 29px 0;
+            padding-left: 1px;
+        }
+        .book-cover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.3);
+            margin: 15px; /* Reduced for smaller screens */
+            max-width: 80%; /* Reduced for smaller screens */
+            height: auto;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .book-cover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Styles for larger screens */
+        @media (min-width: 600px) {
+            nav li {
+                margin: 0 7em; /* Original margin for larger screens */
+            }
+            .book-cover {
+                margin: 66px 15px -35px 1px; /* Original margin for larger screens */
+                max-width: 125px; /* Original max-width for larger screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="compendium.html">Compendium</a></li>
+          <li><a href="aistuff.html">AI Stuff</a></li>
+        </ul>
+    </nav>
+    <div class="outer-container">
+        <div class="books-container">
+        <img src="Images/Music/music1.png" alt="Tom Waits" class="book-cover">
+        <img src="Images/Music/music2.png" alt="Nick Cave" class="book-cover">
+        <img src="Images/Music/music3.png" alt="The Walkmen" class="book-cover">
+        <img src="Images/Music/music4.png" alt="Father John Misty" class="book-cover">
+        <img src="Images/Music/music5.png" alt="Conor Oberst" class="book-cover">
+        <img src="Images/Music/music6.png" alt="Pearl Jam" class="book-cover">
+        <img src="Images/Music/music7.png" alt="Suede" class="book-cover">
+        <img src="Images/Music/music8.png" alt="Mark Lanegan" class="book-cover" >
+        <img src="Images/Music/music9.png" alt="Spiritualized" class="book-cover">
+        <img src="Images/Music/music10.png" alt="Interpol" class="book-cover">
+        <img src="Images/Music/music11.png" alt="Jeff Buckley" class="book-cover">
+        <img src="Images/Music/music12.png" alt="Mazzy Star" class="book-cover">
+        <img src="Images/Music/music13.png" alt="Elliott Smith" class="book-cover">
+        <img src="Images/Music/music15.png" alt="Bo Burnham" class="book-cover">
+        <img src="Images/Music/music16.png" alt="Lisa Germano" class="book-cover">
+        <img src="Images/Music/music17.png" alt="The Velvet Underground" class="book-cover">>
+        <img src="Images/Music/music18.png" alt="The Smiths" class="book-cover">
+        <img src="Images/Music/music19.png" alt="Eels" class="book-cover">
+        <img src="Images/Music/music20.png" alt="Rufus Wainwright" class="book-cover">
+        <img src="Images/Music/music21.png" alt="The Lemonheads" class="book-cover">
+        <img src="Images/Music/music22.png" alt="The Strokes" class="book-cover">
+        <img src="Images/Music/music23.png" alt="Bob Dylan" class="book-cover">
+        <img src="Images/Music/music24.png" alt="Lana Del Rey" class="book-cover">
+        <img src="Images/Music/music25.png" alt="Fiona Apple" class="book-cover">
+
+        <!-- Add more book cover images as needed -->
+    </div>
+  
+</head>
+<body>
+    <!-- Add your page content here -->
+</body>
+</html>

@@ -1,0 +1,60 @@
+body {
+    font-family: 'Elegant Typewriter', monospace;
+    background-color: #ffffff;
+    background-image: url('background1d.png'); /* Replace this with the path to your image */
+    background-size: cover; /* Scale the image to cover the entire background */
+    background-position: center; /* Center the image in the background */
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.typewriter {
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    font-size: 1rem;
+    line-height: 1;
+    width: 90%;
+    position: absolute;
+    top: 80%; /* Adjust this value to position the text below the image */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+#overlay-image {
+    position: absolute;
+    max-width: 70%;
+    max-height: 70%;
+    left: 50%;
+    top: 44%; /* Adjust this value to position the image above the text */
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em 0;
+    z-index: 1000; /* Add this line to set the z-index */
+  }
+  
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}

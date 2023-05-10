@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Elegant+Typewriter&display=swap');
+        body {
+            font-family: 'Elegant Typewriter', monospace;
+            background-image: url('bukbg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1em 0;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            margin: 0 1em; /* Smaller margin for small screens */
+        }
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1.2em;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #cccccc;
+        }
+        .books-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 10px 0; /* Adjusted for smaller screens */
+            padding-left: 1px;
+        }
+        .book-cover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.3);
+            margin: 20px; /* Reduced for smaller screens */
+            max-width: 90%; /* Reduced for smaller screens */
+            height: auto;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .book-cover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Styles for larger screens */
+        @media (min-width: 600px) {
+            nav li {
+                margin: 0 7em; /* Original margin for larger screens */
+            }
+            .book-cover {
+                margin: 82px 5px -65px 1px; /* Original margin for larger screens */
+                max-width: 85px; /* Original max-width for larger screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="compendium.html">Compendium</a></li>
+          <li><a href="aistuff.html">AI Stuff</a></li>
+        </ul>
+    </nav>
+    <div class="outer-container">
+        <div class="books-container">
+        <!-- Replace the src attributes with the URLs of your book cover images -->
+        <img src="Images/Books/book51.png" alt="Book Cover 20" class="book-cover">
+        <img src="Images/Books/book9.png" alt="Book Cover 9" class="book-cover">
+        <img src="Images/Books/book11.png" alt="Book Cover 11" class="book-cover">
+        <img src="Images/Books/book22.png" alt="Book Cover 11" class="book-cover">
+        <img src="Images/Books/book7.png" alt="Book Cover 7" class="book-cover">
+        <img src="Images/Books/book1.png" alt="Book Cover 1" class="book-cover">
+        <img src="Images/Books/book2.png" alt="Book Cover 2" class="book-cover">
+        <img src="Images/Books/book43.png" alt="Book Cover 20" class="book-cover">
+        <img src="Images/Books/book42.png" alt="Book Cover 20" class="book-cover">
+        <img src="Images/Books/book3.png" alt="Book Cover 3" class="book-cover">
+        <img src="Images/Books/book4.png" alt="Book Cover 4" class="book-cover">
+        <img src="Images/Books/book6.png" alt="Book Cover 6" class="book-cover">
+        <img src="Images/Books/book8.png" alt="Book Cover 8" class="book-cover">
+        <img src="Images/Books/book10.png" alt="Book Cover 10" class="book-cover">
+        <img src="Images/Books/book12.png" alt="Book Cover 12" class="book-cover">
+        <img src="Images/Books/book13.png" alt="Book Cover 13" class="book-cover">
+        <img src="Images/Books/book14.png" alt="Book Cover 14" class="book-cover">
+        <img src="Images/Books/book15.png" alt="Book Cover 15" class="book-cover">
+        <img src="Images/Books/book16.png" alt="Book Cover 16" class="book-cover">
+        <img src="Images/Books/book17.png" alt="Book Cover 17" class="book-cover">
+        <img src="Images/Books/book18.png" alt="Book Cover 18" class="book-cover">
+        <img src="Images/Books/book23.png" alt="Book Cover 12" class="book-cover">
+        <img src="Images/Books/book24.png" alt="Book Cover 13" class="book-cover">
+        <img src="Images/Books/book25.png" alt="Book Cover 14" class="book-cover">
+        <img src="Images/Books/book26.png" alt="Book Cover 15" class="book-cover">
+        <img src="Images/Books/book30.png" alt="Book Cover 19" class="book-cover">
+        <img src="Images/Books/book31.png" alt="Book Cover 20" class="book-cover">
+        <img src="Images/Books/book32.png" alt="Book Cover 11" class="book-cover">
+        <img src="Images/Books/book34.png" alt="Book Cover 13" class="book-cover">
+        <img src="Images/Books/book35.png" alt="Book Cover 14" class="book-cover">
+        <img src="Images/Books/book36.png" alt="Book Cover 15" class="book-cover">
+        <img src="Images/Books/book37.png" alt="Book Cover 16" class="book-cover">
+        <img src="Images/Books/book38.png" alt="Book Cover 17" class="book-cover">
+        <img src="Images/Books/book40.png" alt="Book Cover 19" class="book-cover">
+                
+        <!-- Add more book cover images as needed -->
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Elegant+Typewriter&display=swap');
+        body {
+            font-family: 'Elegant Typewriter', monospace;
+            background-image: url('gamesbg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1em 0;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            margin: 0 1em; /* Smaller margin for small screens */
+        }
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1.2em;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #cccccc;
+        }
+        .books-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 10px 0; /* Adjusted for smaller screens */
+            padding-left: 1px;
+        }
+        .book-cover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.3);
+            margin: 20px; /* Reduced for smaller screens */
+            max-width: 90%; /* Reduced for smaller screens */
+            height: auto;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .book-cover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Styles for larger screens */
+        @media (min-width: 600px) {
+            nav li {
+                margin: 0 7em; /* Original margin for larger screens */
+            }
+            .book-cover {
+                margin: 56px 15px -35px 1px; /* Original margin for larger screens */
+                max-width: 105px; /* Original max-width for larger screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="compendium.html">Compendium</a></li>
+          <li><a href="aistuff.html">AI Stuff</a></li>
+        </ul>
+    </nav>
+    <div class="outer-container">
+        <div class="books-container">
+            <img src="Images/Games/game1.png" alt="Book Cover 20" class="book-cover">
+            <img src="Images/Games/game2.png" alt="Book Cover 20" class="book-cover">
+            <img src="Images/Games/game3.png" alt="Book Cover 20" class="book-cover">
+            <img src="Images/Games/game4.png" alt="Book Cover 20" class="book-cover">
+            <img src="Images/Games/game5.png" alt="Book Cover 20" class="book-cover">
+            <img src="Images/Games/game6.png" alt="Book Cover 20" class="book-cover">
+            <img src="Images/Games/game7.png" alt="Book Cover 20" class="book-cover">
+            <img src="Images/Games/game8.png" alt="Book Cover 20" class="book-cover">
+            <img src="Images/Games/game9.png" alt="Book Cover 20" class="book-cover">
+            <img src="Images/Games/game10.png" alt="Book Cover 20" class="book-cover">
+            <img src="Images/Games/game12.png" alt="Book Cover 20" class="book-cover">
+            <img src="Images/Games/game13.png" alt="Book Cover 20" class="book-cover">
+            <img src="Images/Games/game14.png" alt="Book Cover 20" class="book-cover">
+            <img src="Images/Games/game15.png" alt="Book Cover 20" class="book-cover"style="margin-right: 940px;">
+        <!-- Add more book cover images as needed -->
+    </div>
+  
+</head>
+<body>
+    <!-- Add your page content here -->
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Elegant+Typewriter&display=swap');
+        body {
+            font-family: 'Elegant Typewriter', monospace;
+            background-image: url('moviebg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1em 0;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            margin: 0 1em; /* Smaller margin for small screens */
+        }
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1.2em;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #cccccc;
+        }
+        .section {
+            padding: 4em 0;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 1em;
+        }
+
+        .poster-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 29px 0;
+            padding-left: 1px
+        }
+        .poster-cover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.3);
+            margin: 15px; /* Reduced for smaller screens */
+            max-width: 90%; /* Reduced for smaller screens */
+            height: auto;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .poster-cover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Styles for larger screens */
+        @media (min-width: 600px) {
+            nav li {
+                margin: 0 7em; /* Original margin for larger screens */
+            }
+            .poster-cover {
+                margin: 33px 10px -20px 1px; /* Original margin for larger screens */
+                max-width: 125px; /* Original max-width for larger screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="compendium.html">Compendium</a></li>
+          <li><a href="aistuff.html">AI Stuff</a></li>
+        </ul>
+    </nav>
+
+    <div class="poster-container">
+        <!-- Replace the src attributes with the URLs of your book cover images -->
+        <img src="Images\Movies\poster1.png" alt="Casablanca" class="poster-cover">
+        <img src="Images\Movies\poster2.png" alt="Jesse James" class="poster-cover">
+        <img src="Images\Movies\poster3.png" alt="The Big Lebowski" class="poster-cover">
+        <img src="Images\Movies\poster4.png" alt="The Fall" class="poster-cover">
+        <img src="Images\Movies\poster5.png" alt="Freaks" class="poster-cover">
+        <img src="Images\Movies\poster6.png" alt="In Bruges" class="poster-cover">
+        <img src="Images\Movies\poster7.png" alt="In The Mood For Love" class="poster-cover">
+        <img src="Images\Movies\poster8.png" alt="Book Cover 20" class="poster-cover">
+        <img src="Images\Movies\poster9.png" alt="Book Cover 20" class="poster-cover">
+        <img src="Images\Movies\poster10.png" alt="Book Cover 20" class="poster-cover">
+        <img src="Images\Movies\poster11.png" alt="Book Cover 20" class="poster-cover">
+        <img src="Images\Movies\poster12.png" alt="Book Cover 20" class="poster-cover">
+        <img src="Images\Movies\poster13.png" alt="Book Cover 20" class="poster-cover">
+        <img src="Images\Movies\poster14.png" alt="Book Cover 20" class="poster-cover">
+        <img src="Images\Movies\poster15.png" alt="Book Cover 20" class="poster-cover">
+        <img src="Images\Movies\poster16.png" alt="Book Cover 20" class="poster-cover">
+        <img src="Images\Movies\poster17.png" alt="Book Cover 20" class="poster-cover">
+        <img src="Images\Movies\poster18.png" alt="Book Cover 20" class="poster-cover">
+        <!-- Add more book cover images as needed -->
+    </div>
+    
+
+</body>
+</html>
