@@ -40,8 +40,52 @@
   
   <input type="submit" value="Generate Story">
 </form>
-<script src="script.js"></script>
-<script src="netlify/functions/generatestory.js"></script>
+
+<div id="story"></div>
+<div id="questions"></div>
+
+<script>
+  document.getElementById('storyForm').addEventListener('submit', function(event) {
+    // Prevent the form from submitting the old-fashioned way
+    event.preventDefault();
+
+    // Get the values from the form
+    var readingLevel = document.getElementById('readingLevel').value;
+    var characterName = document.getElementById('characterName').value;
+    var genre = document.getElementById('genre').value;
+    var numQuestions = document.getElementById('numQuestions').value;
+    var difficultyLevel = document.getElementById('difficultyLevel').value;
+
+    // Prepare data to send
+    var data = {
+      'readingLevel': readingLevel,
+      'characterName': characterName,
+      'genre': genre,
+      'numQuestions': numQuestions,
+      'difficultyLevel': difficultyLevel
+    };
+
+    // Send data to the server
+    fetch(/.netlify/functions/generateStory, {
+      method: 'POST', 
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+    .then(response => response.json())
+    .then(data => {
+      // Here, you can handle the response from the server.
+      // For example, you can display the generated story and questions in the webpage.
+      document.getElementById('story').innerText = data.story;
+      document.getElementById('questions').innerText = data.questions.join('\n');
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+  });
+</script>
 
 </body>
 </html>
+

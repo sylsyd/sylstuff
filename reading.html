@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Activity</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+        .form-field {
+            margin-bottom: 20px;
+        }
+        .form-field label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-field input, .form-field select {
+            width: 100%;
+            height: 30px;
+        }
+        .form-field input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        .form-field input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reading Activity</h1>
+    <form id="readingActivityForm">
+        <div class="form-field">
+            <label for="readingLevel">Reading Level (1-10):</label>
+            <input type="number" id="readingLevel" name="readingLevel" min="1" max="10" required>
+        </div>
+        <div class="form-field">
+            <label for="characterName">Character Name:</label>
+            <input type="text" id="characterName" name="characterName" required>
+        </div>
+        <div class="form-field">
+            <label for="genre">Story Genre:</label>
+            <select id="genre" name="genre" required>
+                <option value="">Select a Genre</option>
+                <option value="spooky">Spooky</option>
+                <option value="funny">Funny</option>
+                <option value="action">Action</option>
+                <!-- Add more genres as needed -->
+            </select>
+        </div>
+        <div class="form-field">
+            <label for="numQuestions">Number of Questions (1-10):</label>
+            <input type="number" id="numQuestions" name="numQuestions" min="1" max="10" required>
+        </div>
+        <div class="form-field">
+            <label for="questionDifficulty">Question Difficulty (1-5):</label>
+            <input type="number" id="questionDifficulty" name="questionDifficulty" min="1" max="5" required>
+        </div>
+        <div class="form-field">
+            <input type="submit" value="Generate Story">
+        </div>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
