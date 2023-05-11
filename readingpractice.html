@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Reading Practice</title>
+</head>
+<body>
+<h1>Reading Practice</h1>
+<form id="storyForm">
+  <label for="readingLevel">Select Reading Level:</label><br>
+  <select id="readingLevel" name="readingLevel">
+    <option value="1">Level 1</option>
+    <option value="2">Level 2</option>
+    <!-- Continue this for all levels up to 10 -->
+  </select><br>
+  
+  <label for="characterName">Enter a Character's Name:</label><br>
+  <input type="text" id="characterName" name="characterName"><br>
+  
+  <label for="genre">Select a Genre:</label><br>
+  <select id="genre" name="genre">
+    <option value="spooky">Spooky</option>
+    <option value="funny">Funny</option>
+    <option value="action">Action</option>
+    <!-- Add more genres as needed -->
+  </select><br>
+  
+  <label for="numQuestions">Select Number of Questions:</label><br>
+  <select id="numQuestions" name="numQuestions">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <!-- Continue this for all numbers up to 10 -->
+  </select><br>
+  
+  <label for="difficultyLevel">Select Difficulty Level:</label><br>
+  <select id="difficultyLevel" name="difficultyLevel">
+    <option value="1">Level 1</option>
+    <option value="2">Level 2</option>
+    <!-- Continue this for all levels up to 5 -->
+  </select><br>
+  
+  <input type="submit" value="Generate Story">
+</form>
+<script src="script.js"></script>
+<script src="netlify/functions/generatestory.js"></script>
+
+</body>
+</html>

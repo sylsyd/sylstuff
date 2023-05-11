@@ -1,3 +1,7 @@
+    document.addEventListener('DOMContentLoaded', function() {
+
+    console.log('Script loaded');
+
 const storyTexts = [
     `The girl, no older than nineteen, perched on the edge of the bed, her legs drawn up and her arms wrapped tightly around her knees. The sunlight filtered through the grimy window, casting a warm glow on her pale skin, which seemed almost translucent against the vibrant orange wallpaper. The garish pattern behind her seemed to writhe and twist, as if it were a living thing eager to engulf her in its monstrous embrace. She was not looking at the camera, but rather seemed lost in the labyrinth of her own thoughts, a place where reality and fantasy were indistinguishable. Her eyes, large and doe-like, held a distant, vacant quality, as if they could see beyond the confines of the room and into another world. Her hair, a tangle of chestnut curls, framed her face like a halo, further enhancing the ethereal quality of her visage.
 
@@ -93,58 +97,99 @@ Life had placed them there, in front of that house, on that foggy autumn day. An
 
 
 
-  const imagePaths = ["image1.png", "image2.png", "image3.jpg", "image4.jpg", "image5.jpg", "image6.png", "image7.png","image8.png", "image9.png", "image10.png"];
+const imagePaths = ["image1.png", "image2.png", "image3.jpg", "image4.jpg", "image5.jpg", "image6.png", "image7.png","image8.png", "image9.png", "image10.png"];
 
-  const textContainer = document.getElementById("text-container");
-  const overlayImage = document.getElementById("overlay-image");
-  
-  let currentIndex = 0;
-  let charIndex = 0;
-  let typingInProgress = false;
-  let isTypingStopped = false;
-  
-  let indices = Array.from({ length: storyTexts.length }, (_, i) => i);
-  shuffleArray(indices);
-  
-  function shuffleArray(array) {
+const textContainer = document.getElementById("text-container");
+const overlayImage = document.getElementById("overlay-image");
+
+let currentIndex = 0;
+let charIndex = 0;
+let typingInProgress = false;
+let isTypingStopped = false;
+
+let indices = Array.from({ length: storyTexts.length }, (_, i) => i);
+shuffleArray(indices);
+
+function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
     }
-  }
-  
-  function typeWriter() {
+}
+
+function typeWriter() {
     typingInProgress = true;
     if (charIndex < storyTexts[indices[currentIndex]].length && !isTypingStopped) {
-      textContainer.innerHTML += storyTexts[indices[currentIndex]].charAt(charIndex);
-      charIndex++;
-      setTimeout(typeWriter, 20);
+        textContainer.innerHTML += storyTexts[indices[currentIndex]].charAt(charIndex);
+        charIndex++;
+        setTimeout(typeWriter, 20);
     } else {
-      typingInProgress = false;
+        typingInProgress = false;
     }
-  }
-  
-  function changeImage() {
+}
+
+function changeImage() {
     if (typingInProgress) {
-      isTypingStopped = true;
-      setTimeout(changeImage, 100);
-      return;
+        isTypingStopped = true;
+        setTimeout(changeImage, 100);
+        return;
     }
-  
+
     isTypingStopped = false;
     currentIndex++;
     if (currentIndex >= indices.length) {
-      currentIndex = 0;
-      shuffleArray(indices); // Shuffle only after all stories have been displayed
+        currentIndex = 0;
+        shuffleArray(indices); // Shuffle only after all stories have been displayed
     }
     
     charIndex = 0;
     textContainer.innerHTML = "";
     overlayImage.src = imagePaths[indices[currentIndex]];
     typeWriter();
-  }
-  
-  overlayImage.addEventListener("click", changeImage);
-  
-  // Start
-  changeImage();
+}
+
+overlayImage.addEventListener("click", changeImage);
+
+// Start
+changeImage();
+
+document.getElementById('storyForm').addEventListener('submit', function(event) {
+    // Prevent the form from submitting the old-fashioned way
+    event.preventDefault();
+    console.log('Form submitted'); // New log statement
+
+    // Get the values from the form
+    var readingLevel = document.getElementById('readingLevel').value;
+    var characterName = document.getElementById('characterName').value;
+    var genre = document.getElementById('genre').value;
+    var numQuestions = document.getElementById('numQuestions').value;
+    var difficultyLevel = document.getElementById('difficultyLevel').value;
+
+    // Prepare data to send
+    var data = {
+        'readingLevel': readingLevel,
+        'characterName': characterName,
+        'genre': genre,
+        'numQuestions': numQuestions,
+        'difficultyLevel': difficultyLevel
+    };
+
+    // Send data to the server
+    fetch('/.netlify/functions/generateStory', {
+        method: 'POST', 
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log("Received response from server"); // New log statement
+        document.getElementById('story').innerText = data.story;
+        document.getElementById('questions').innerText = data.questions.join('\n');
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
+});
+});
