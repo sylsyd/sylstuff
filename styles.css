@@ -10,28 +10,34 @@ body {
     position: relative;
 }
 
-.typewriter {
-    white-space: pre-wrap;
-    overflow-wrap: break-word;
-    font-size: 1rem;
-    line-height: 1;
-    width: 90%;
-    position: absolute;
-    top: 80%; /* Adjust this value to position the text below the image */
-    left: 50%;
-    transform: translateX(-50%);
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
 }
-
 
 #overlay-image {
     position: absolute;
-    max-width: 70%;
-    max-height: 70%;
-    left: 50%;
-    top: 44%; /* Adjust this value to position the image above the text */
+    max-width: 90%;
+    max-height: 90%;
+    left: 25%; /* Adjust this value to move the image right */
+    top: 54%; /* Adjust this value to move the image down */
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: 2;
 }
+
+.typewriter {
+    position: absolute;
+    width: 45%; /* You may need to adjust this */
+    top: 50%; /* Adjust this value to move the text down */
+    left: 73%; /* Adjust this value to move the text to the right */
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Bring the text to the front */
+}
+    
+  
 
 nav {
     position: fixed;
@@ -67,9 +73,64 @@ nav {
 }
 
 @media only screen and (max-width: 600px) {
+    .content {
+        position: relative; /* Make this a container for absolutely positioned elements */
+    }
+
+    .overlay-container {
+        position: absolute; /* Position this absolutely within .content */
+        top: 50%; /* Center it vertically */
+        left: 50%; /* Center it horizontally */
+        transform: translate(-50%, 0); /* Use transform to move it horizontally */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   @media only screen and (max-width: 600px) {
+    .content {
+        position: relative; /* Make this a container for absolutely positioned elements */
+    }
+
+    .overlay-container {
+        position: absolute; /* Position this absolutely within .content */
+        top: 50%; /* Center it vertically */
+        left: 50%; /* Center it horizontally */
+        transform: translate(-50%, 0); /* Use transform to move it horizontally */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     #overlay-image {
         max-width: 90%;
         max-height: 90%;
-        /* adjust the rest as needed */
+        left: 50%; /* Adjust this value to move the image right */
+        top: 45%; /* Adjust this value to move the image up */
+        transform: translate(-50%, -50%);
+        z-index: 2; /* Ensure it's on top of the text */
     }
-}  
+    
+
+    .typewriter {
+        position: absolute;
+        width: 100%; /* Adjust as needed */
+        top: 50%; /* Position from top */
+        left: 50%; /* Position from left */
+        transform: translate(-50%, 0); /* Change the Y value to 0 to expand downwards */
+        z-index: 1; /* Ensure it's below the image */
+        /* ...other styles... */
+    }
+}
+
+    .typewriter {
+        position: absolute;
+        width: 100%; /* Adjust as needed */
+        top: 80%; /* Position from top */
+        left: 50%; /* Position from left */
+        transform: translate(-50%, 0); /* Change the Y value to 0 to expand downwards */
+        z-index: 1; /* Ensure it's below the image */
+        /* ...other styles... */
+    }
+}
+  

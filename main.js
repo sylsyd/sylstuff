@@ -29,6 +29,9 @@ document.getElementById('readingActivityForm').addEventListener('submit', functi
         // Send the form data to the server-side function
         fetch('/.netlify/functions/generateStory', {
             method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
             body: JSON.stringify({
                 readingLevel: readingLevel,
                 characterName: characterName,
@@ -42,6 +45,7 @@ document.getElementById('readingActivityForm').addEventListener('submit', functi
             console.log('Story:', data.story);
             console.log('Questions:', data.questions);
         });
+        
     });
     
 });

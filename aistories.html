@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Stuff</title>
+    <title>AI Stories</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Elegant+Typewriter&display=swap');
         body {
             font-family: 'Elegant Typewriter', monospace;
-            background-image: url('aistuffbg.png');
-            background-repeat: no-repeat;
+            background-image: url('background1d.png');
+            background-repeat: repeat;
             background-size: cover;
             margin: 0;
             padding: 0;
@@ -49,7 +49,7 @@
             padding-left: 1px;
         }
         .book-cover {
-            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.3);
             margin: 20px; /* Reduced for smaller screens */
             max-width: 90%; /* Reduced for smaller screens */
             height: auto;
@@ -57,7 +57,7 @@
         }
         .book-cover:hover {
             transform: translateY(-5px);
-            
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.3);
         }
 
         /* Styles for larger screens */
@@ -66,43 +66,24 @@
                 margin: 0 7em; /* Original margin for larger screens */
             }
             .book-cover {
-                margin: 316px 15px -35px 1px; /* Original margin for larger screens */
-                max-width: 255px; /* Original max-width for larger screens */
+                margin: 56px 15px -35px 1px; /* Original margin for larger screens */
+                max-width: 105px; /* Original max-width for larger screens */
             }
         }
-
-        @font-face {
-    font-family: 'Elegant Typewriter';
-    src: url('Fonts/ELEGANT TYPEWRITER Bold.ttf') format('truetype'),
-         url('Fonts/ELEGANT TYPEWRITER Light.ttf') format('truetype'),
-         url('Fonts/ELEGANT TYPEWRITER Regular.ttf') format('truetype');
-}
-    </style>
+    </style>    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="compendium.html">Compendium</a></li>
-          <li><a href="aistuff.html">AI Stuff</a></li>
-        </ul>
-    </nav>
-    <div class="outer-container">
-        <div class="books-container">
-        <a href="aigames.html"></a>        
-        <img src="Images/disk2.png" alt="Ai Games" class="book-cover" onclick="window.location.href='aigames.html'">
-        </a>
-
-        <a href="aischool.html"></a>
-        <img src="Images/disk3.png" alt="AI School" class="book-cover" onclick="window.location.href='aischool.html'">
-        </a>
-        
-        <!-- Add more book cover images as needed -->
-    </div>
-  
-</head>
-<body>
-    <!-- Add your page content here -->
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="compendium.html">Compendium</a></li>
+      <li><a href="aistuff.html">AI Stuff</a></li>
+    </ul>
+  </nav>
+    <img id="overlay-image" src="image1.png" alt="Overlay Image">
+    <div id="text-container" class="typewriter"></div>
+    <script src="script.js"></script>
 </body>
 </html>
