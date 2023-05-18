@@ -134,12 +134,19 @@ And so, he played. For the river, for the fog, for the world and for himself. Be
 
 `,
 
+`Every line of this suit is wrong. Stiff. Like a mannequin dressed in my father's clothes. The velvet chair, too rich, too soft. It swallows me, this plush maw, drinking in my being.
+
+Eyes are always on me, seeking. Cameras, people, mirrors. They gnaw at the edges of my solitude, chipping away pieces of me until I am a mosaic of their expectations. My only refuge is my wandering thoughts. I dive into them, let the current carry me far from the snapping shutters and the probing gazes.
+
+How did I get trapped in this circus of lights and whispers? I'm a spectacle, a performance. But the play is long and the actor is weary. Each smile, each nod, each word, a pebble in a mountain of tiredness.
+`,
+
 ];
 
 
 
 
-const imagePaths = [ "Images/AIstories/image1.png", "Images/AIstories/image2.png", "Images/AIstories/image3.jpg", "Images/AIstories/image4.jpg", "Images/AIstories/image5.jpg", "Images/AIstories/image6.png", "Images/AIstories/image7.png","Images/AIstories/image8.png", "Images/AIstories/image9.png", "Images/AIstories/image10.png", "Images/AIstories/image11.png", "Images/AIstories/image12.png","Images/AIstories/image13.png","Images/AIstories/image14.png", "Images/AIstories/image15.png", "Images/AIstories/image16.png", "Images/AIstories/image17.png",  ];
+const imagePaths = [ "Images/AIstories/image1.png", "Images/AIstories/image2.png", "Images/AIstories/image3.jpg", "Images/AIstories/image4.jpg", "Images/AIstories/image5.jpg", "Images/AIstories/image6.png", "Images/AIstories/image7.png","Images/AIstories/image8.png", "Images/AIstories/image9.png", "Images/AIstories/image10.png", "Images/AIstories/image11.png", "Images/AIstories/image12.png","Images/AIstories/image13.png","Images/AIstories/image14.png", "Images/AIstories/image15.png", "Images/AIstories/image16.png", "Images/AIstories/image17.png", "Images/AIstories/image18.png",  ];
 
 const textContainer = document.getElementById("text-container");
 const overlayImage = document.getElementById("overlay-image");

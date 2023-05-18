@@ -20,7 +20,7 @@ body {
 
 #overlay-image {
     position: absolute;
-    max-width: 90%;
+    max-width: 45%;
     max-height: 90%;
     left: 25%; /* Adjust this value to move the image right */
     top: 54%; /* Adjust this value to move the image down */
