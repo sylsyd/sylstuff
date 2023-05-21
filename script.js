@@ -141,12 +141,35 @@ Eyes are always on me, seeking. Cameras, people, mirrors. They gnaw at the edges
 How did I get trapped in this circus of lights and whispers? I'm a spectacle, a performance. But the play is long and the actor is weary. Each smile, each nod, each word, a pebble in a mountain of tiredness.
 `,
 
+`This sweater, this garish beacon. It screams louder than I ever could. It's not me, not my quiet, orderly world. It's a jester's costume on a man who's forgotten how to laugh.
+
+But I am more than this moment. More than the lines on my face and the weary sag of my shoulders. More than the annoyance that bubbles up, hot and irritable, at this intrusion. More than the embarrassment that quietly nags, whispering of a time when I would have shrugged this off, laughed it off.
+`,
+
+`In the quiet corner of existence, a boy, fair as winter dawn and with hair combed back in a golden wave. Frozen in time. Eyes, twin sapphires, full yet empty, a riddle wrapped in silence.
+
+A green shirt, light as spring leaves, kissed by the morning dew. A tie, darker, the forest's shadow at twilight. Precision in chaos, order amid uncertainty.
+
+Eyes lost in a labyrinth of thoughts. Wanderer of the mind, explorer of the unknown. The abyss or the promise, it was hard to tell. The line between despair and desire, blurred like the edge of a dream.`,
+
+
+`The green wallpaper is peeling off, just as I feel my own self peeling away, layer by layer. My humanity being stripped off, bit by bit, leaving behind something...unnatural.
+
+I feel the weight of my existence in the world of men, the burden of being different. I've learned to bear it, like this suit I am wearing.
+
+My eyes, my only window to the world, brim with an unspeakable sadness. I see the world as a man and feel it as an elephant. The dichotomy is a constant reminder of my otherness, my isolation.
+
+I stand tall, not in spite of my difference, but because of it. I am not a man, not an elephant, but both, and neither.
+
+In the silence of the room, under the unfeeling gaze of the light, I find a strange comfort. Here, I am not judged. Here, I am not an oddity. 
+`,
+
 ];
 
 
 
 
-const imagePaths = [ "Images/AIstories/image1.png", "Images/AIstories/image2.png", "Images/AIstories/image3.jpg", "Images/AIstories/image4.jpg", "Images/AIstories/image5.jpg", "Images/AIstories/image6.png", "Images/AIstories/image7.png","Images/AIstories/image8.png", "Images/AIstories/image9.png", "Images/AIstories/image10.png", "Images/AIstories/image11.png", "Images/AIstories/image12.png","Images/AIstories/image13.png","Images/AIstories/image14.png", "Images/AIstories/image15.png", "Images/AIstories/image16.png", "Images/AIstories/image17.png", "Images/AIstories/image18.png",  ];
+const imagePaths = [ "Images/AIstories/image1.png", "Images/AIstories/image2.png", "Images/AIstories/image3.jpg", "Images/AIstories/image4.jpg", "Images/AIstories/image5.jpg", "Images/AIstories/image6.png", "Images/AIstories/image7.png","Images/AIstories/image8.png", "Images/AIstories/image9.png", "Images/AIstories/image10.png", "Images/AIstories/image11.png", "Images/AIstories/image12.png","Images/AIstories/image13.png","Images/AIstories/image14.png", "Images/AIstories/image15.png", "Images/AIstories/image16.png", "Images/AIstories/image17.png", "Images/AIstories/image18.png", "Images/AIstories/image19.png", "Images/AIstories/image20.png", "Images/AIstories/image21.png",  ];
 
 const textContainer = document.getElementById("text-container");
 const overlayImage = document.getElementById("overlay-image");
